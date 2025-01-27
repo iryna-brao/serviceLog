@@ -129,7 +129,6 @@ INFO: Received log message: Shuffled array for number: 5
 ```
 
 ---
-
 ## **Contact**
 For any questions or issues, please contact iryna.boblieva@gmail.com.
 
