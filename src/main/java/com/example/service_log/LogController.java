@@ -19,16 +19,16 @@ public class LogController {
             return ResponseEntity.badRequest().build();
         }
 
-        // Logging отриманого повідомлення у консоль
+        // Logging received message in console
         logger.info("Received log message: {}", logMessage);
 
-        // Повертаємо HTTP 200 OK
+        // Return HTTP 200 OK
         return ResponseEntity.ok().build();
     }
 
     @ExceptionHandler(Exception.class)
     public ResponseEntity<String> handleException(Exception ex) {
-        // Логування помилки
+        // Logging of error
         logger.error("Error occurred: {}", ex.getMessage());
         return ResponseEntity.status(500).body("An error occurred while processing the log request.");
     }

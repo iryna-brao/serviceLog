@@ -8,7 +8,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class ServiceLogApplication {
 
-	// Правильний тип Logger із SLF4J
+	// Correct Logger type with SLF4J
 	private static final Logger logger = LoggerFactory.getLogger(ServiceLogApplication.class);
 
 	public static void main(String[] args) {
