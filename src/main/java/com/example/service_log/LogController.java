@@ -19,7 +19,7 @@ public class LogController {
             return ResponseEntity.badRequest().build();
         }
 
-        // Логування отриманого повідомлення у консоль
+        // Logging отриманого повідомлення у консоль
         logger.info("Received log message: {}", logMessage);
 
         // Повертаємо HTTP 200 OK
