@@ -13,7 +13,7 @@ public class LogController {
 
     @PostMapping("/log")
     public ResponseEntity<Void> logRequest(@RequestBody String logMessage) {
-        // Перевіряємо, чи повідомлення не є порожнім
+        // Check if mail isn't empty
         if (logMessage == null || logMessage.isBlank()) {
             logger.warn("Received empty log message.");
             return ResponseEntity.badRequest().build();
